@@ -1,0 +1,1 @@
+Konfigurace pro produkční homelab
