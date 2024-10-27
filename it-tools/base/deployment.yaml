@@ -17,7 +17,7 @@ spec:
         - name: it-tools
           image: corentinth/it-tools:latest # Nahraďte skutečným obrazem pro it-tools
           ports:
-            - containerPort: 8080
+            - containerPort: 8081
           volumeMounts:
             - name: it-tools-data
               mountPath: /data  # Cesta, kde aplikace očekává data
