@@ -1,0 +1,4 @@
+controller:
+  service:
+    type: NodePort
+    externalIPs: ["<vaše_externí_IP>"]  # Zadejte externí IP adresu
