@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: 'https://github.com/Srbino/homelab-prod.git'
     targetRevision: HEAD
-    path: nginx-ingress/overlays
+    path: nginx-ingress/overlays/prod
   destination:
     server: https://kubernetes.default.svc
     namespace: nginx-ingress
@@ -28,7 +28,7 @@ spec:
   source:
     repoURL: 'https://github.com/Srbino/homelab-prod.git'
     targetRevision: HEAD
-    path: argocd-ingress/overlays/
+    path: argocd-ingress/overlays/prod
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd
