@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: it-tools
-          image: it-tools-image:latest  # Nahraďte skutečným obrazem pro it-tools
+          image: corentinth/it-tools:latest # Nahraďte skutečným obrazem pro it-tools
           ports:
             - containerPort: 8080
           volumeMounts:
