@@ -6,8 +6,8 @@ metadata:
 spec:
   type: NodePort
   ports:
-    - port: 8081  # Port, na kterém Kubernetes vystavuje službu
-      targetPort: 8081  # Port kontejneru uvnitř podu
-      nodePort: 32004  # Port pro přístup zvenčí
+    - port: 8081
+      targetPort: 8081
+      nodePort: 32004
   selector:
     app: it-tools

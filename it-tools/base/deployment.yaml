@@ -15,12 +15,12 @@ spec:
     spec:
       containers:
         - name: it-tools
-          image: corentinth/it-tools:latest # Nahraďte skutečným obrazem pro it-tools
+          image: corentinth/it-tools:latest
           ports:
             - containerPort: 8081
           volumeMounts:
             - name: it-tools-data
-              mountPath: /data  # Cesta, kde aplikace očekává data
+              mountPath: /data
       volumes:
         - name: it-tools-data
           persistentVolumeClaim:
