@@ -1,2 +1,2 @@
 resources:
-  - /nginx-ingress/base
+  - ../../base  # Relativní cesta k základním souborům ve složce base
