@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: it-tools
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: 'https://github.com/Srbino/homelab-prod.git'
+    targetRevision: HEAD
+    path: it-tools/base
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: it-tools
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
