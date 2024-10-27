@@ -8,7 +8,7 @@ metadata:
     nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
 spec:
   rules:
-    - host: argocd.local  # Použijeme lokální doménu nebo IP
+    - host: 192.168.1.119.nip.io  # IP adresa s NIP.IO pro generování doménového jména
       http:
         paths:
           - path: /
@@ -20,5 +20,5 @@ spec:
                   number: 443
   tls:
     - hosts:
-        - argocd.local
-      secretName: argocd-secret  # Název TLS certifikátu
+        - 192.168.1.119.nip.io
+      secretName: argocd-tls  # Název tajného klíče pro TLS certifikát (pokud používáte HTTPS)
