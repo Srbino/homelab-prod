@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: 'https://github.com/Srbino/homelab-prod.git'
     targetRevision: HEAD
-    path: nginx-ingress/overlays/prod
+    path: overlays/prod
   destination:
     server: https://kubernetes.default.svc
     namespace: nginx-ingress
